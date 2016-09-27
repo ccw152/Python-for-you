@@ -1,0 +1,28 @@
+
+# Goal: list a desired words into a list and delete some repeatable word from the original data. 
+# List the file words  - refer to file name: romeo.txt
+# a. 8.4 Open the file romeo.txt and read it line by line.
+# b. For each line, split the line into a list of words using the split() method.
+# c. The program should build a list of words. For each word on each line check to see if the word is already in the list and if not append it to the list. When the program completes,
+# d. sort and print the resulting words in alphabetical order.
+# Source from: Python for Informatics - CH8 assignment 8.4 
+
+==========================================================================================================
+
+fname = raw_input("Enter file name: ")
+fh = open(fname)
+stuff = list()
+lst= []                    # create an empty list 
+for line in fh:
+    line = line.rstrip()
+    line = line.split()    # create an empty list 
+    stuff = stuff + line   # combine stuff into one lsit 
+stuff.sort()
+for a in stuff: 
+    if not a in lst:
+       lst.append(a)       # appended word into list by loop method 
+    else: 
+       continue
+    print a 
+lst.sort()                 # sort list by itself 
+print lst
