@@ -1,0 +1,26 @@
+# method 1: using clue to split 
+
+import re 
+
+data = 'From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008'
+y1 = data.find('@')
+y2 = data.find(' ',y1)    # after y1 match, continue to search for blank 
+print y1
+print y2 
+print data[y1+1:y2]       # assign list index to print out 
+
+
+# method 2:  double split 
+
+line='From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008'
+word = line.split()    # based on blank to split 
+email= word[1]         # assign list[1] index to email 
+piece= email.split('@')  # based on "@" to split 
+print piece[1]
+
+
+# method 3:  using regular expression 
+
+line= 'From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008'
+y = re.findall('@([^ ]*)', line)       # using regular expression to look through @ sign and find all non-blank characters
+print y 
