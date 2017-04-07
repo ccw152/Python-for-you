@@ -1,0 +1,39 @@
+                                      Define a variable 
+
+• A variable is a named place in the memory where a programmer can store data and later retrieve the data using the variable “name”
+  (A variable is a memory location used to store a value)
+• Programmers get to choose the names of the variables
+• You can change the contents of a variable in a later statement
+
+                                       Rules for variable 
+1. Must start with a letter or underscore _
+2. Must consist of letters and numbers and underscores 3. Case Sensitive
+3. Case Sensitive
+4. Aviod to use Reserved words as a variable name 
+   ie. and del for is raise assert elif from lambda return /
+       break else global not try class except if or while / 
+       continue exec import pass yield def finally in print as with/
+       
+       
+                              Definition of statment and expression 
+       
+• We assign a value to a variable using the assignment statement (=)
+• An assignment statement consists of an expression on the right-hand side and a variable to store the result
+ ie. x=2  (Assignment statement)
+     x=x+2 print x. (Assignment with expression, right-hand side)
+     
+     
+                                     Numeric Operator
+
+• Addition  ( + )
+• Subtraction ( - )
+• Multiplication ( * )
+• Division ( / )
+• Power ( ** )
+• Remainder ( % )
+
+
+                                     Comments in Python
+
+• Anything after a # is ignored by Python
+ 
